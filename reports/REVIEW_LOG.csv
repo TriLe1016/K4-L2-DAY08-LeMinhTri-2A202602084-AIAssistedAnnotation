@@ -1,0 +1,9 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0099.jpg,xe con lớn bật đèn pha sát mép dưới giữa ảnh (bị cắt ở mép dưới),added,AI bỏ sót xe gần camera; GUIDELINE: xe bị cắt ở mép ảnh chỉ vẽ phần nằm trong ảnh
+1,frame_0099.jpg,xe đèn pha làn giữa bên phải đi về phía camera,added,AI bỏ sót xe thấy rõ thân và cụm đèn; vẽ box ôm thân xe không tính vệt đèn trên đường
+1,frame_0326.jpg,box AI ôm chung 2 xe đèn pha sát nhau bên trái giữa ảnh,deleted,GUIDELINE: hai xe đứng sát nhau vẽ hai box riêng; xóa box gộp và vẽ lại 2 box cho từng xe
+1,frame_0312.jpg,box AI to ôm 2 xe đèn hậu đỏ bên phải giữa ảnh,deleted,Box gộp nhiều xe; xóa và giữ box riêng ôm sát xe phía phải theo GUIDELINE
+1,frame_0187.jpg,box AI nhỏ chỉ khoanh cụm đèn hậu của xe ở giữa phía xa,edited,GUIDELINE: vẽ theo thân xe đoán được quanh cụm đèn; box mới lớn hơn nhiều nên round1_diff ghi thành 1 deleted + 1 added
+1,frame_0331.jpg,xe nhòe chuyển động bị cắt ở góc dưới bên phải,edited,GUIDELINE: xe nhòe vẫn gán và box ôm vùng nhòe của thân xe; nới box AI sang phải nên round1_diff ghi thành 1 deleted + 1 added
+1,frame_0107.jpg,box AI ôm chung 2 xe đèn hậu đỏ phía xa giữa ảnh (xe bên phải đã có box riêng),edited,GUIDELINE: hai xe đứng sát nhau vẽ hai box riêng; thu box về xe bên trái nên round1_diff ghi thành 1 deleted + 1 added
+1,frame_0312.jpg,box AI ôm chung 2 xe đèn pha sát nhau bên trái phía xa,edited,GUIDELINE: hai xe đứng sát nhau vẽ hai box riêng; thu box về một xe
